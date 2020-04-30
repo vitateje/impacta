@@ -1,0 +1,47 @@
+*{
+    border: 1px solid black;
+}
+.grid_container{
+    display:grid;
+    grid-template-areas: 
+        'cabecalho cabecalho cabecalho cabecalho'
+        'coluna1 coluna2 coluna2 coluna3'
+        'rodape rodape rodape rodape';
+}
+.cabecalho{
+    grid-area: cabecalho;
+    text-align:center;
+}
+.rodape{
+    grid-area: rodape;
+    text-align:center;
+}
+.grid_item1{
+    grid-area: coluna1;
+    text-align:center;
+    background-color:lightgray;
+    height:400px;
+}
+.grid_item2{
+    grid-area: coluna2;
+    text-align:center;
+    background-color:lightgray;
+    height:400px;
+}
+.grid_item3{
+    grid-area: coluna3;
+    text-align:center;
+    background-color:lightgray;
+    height:400px;
+}
+
+@media only screen and (max-width: 900px){
+    .grid_container{
+        display:grid;
+        grid-template-areas: 
+            'cabecalho'
+            'coluna1'
+            'coluna2'
+            'coluna3';
+    }   
+}

@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+    margin: 0%;
+}
+body{
+    height: inherit;
+    margin: inherit;
+    text-align: center;    
+    background-color: rgb(37, 37, 39);
+    color: azure;
+}
+.pagina{
+    height: inherit;
+    margin: inherit;
+    display:grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 5% 95%;
+}
+.menu_superior{
+    height: inherit;
+    margin: inherit;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: rgb(116, 110, 110);
+}
+
+.menu_superior .menu_superior_item{
+   margin: 5px;
+}
+.menu_superior .menu_superior_item:hover{
+    border: 1px solid black;
+    margin: 3px;
+    box-shadow: 3px 3px black;
+}
+.menu_lateral{
+    height: inherit;
+    margin: inherit;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;    
+    background-color: lightgray;    
+}
+.menu_lateral .menu_lateral_item{
+    margin: 5px;
+}
+.menu_lateral .menu_lateral_item:hover{
+    border: 1px solid rgb(65, 47, 47);
+    margin: 3px;
+    box-shadow: 3px 3px black;
+}
+
+.conteudo{
+    height: inherit;
+    margin: inherit;
+    grid-column-start: 2;
+    grid-column-end: 3;    
+}

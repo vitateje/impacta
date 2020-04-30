@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+
+    <h3> Consulta Disciplina </h3>
+
+    <form name ="consultaDisciplina" action="/consulta_disciplina" method="POST" onsubmit="return validaCadastroAluno();">
+        {% csrf_token %}
+        Consulta de Disciplina:<br/>
+        <label for="nome">Nome:</label>
+        <input name="nome" id="nome" type="text"/><br/>
+
+        <input type="submit"/>
+        </form>
+
+{% for nome in nome %}
+    <ul>
+        <li> {{ nome.nome }} </li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}

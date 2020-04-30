@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+      <meta charset="utf-8"/>
+      <title> AC_04 </title>
+      <link rel="stylesheet" href="style.css">
+      <scrip src="ac04.js"></scrip>
+      <script>
+      function soma(){
+   var x = document.getElementById("a").value;
+   var y = document.getElementById("b").value;
+   var operacao = document.getElementById('operacao');
+   if (operacao == '+')
+      {var resultado = parseInt(x) + parseInt(y);
+      alert(resultado);
+};
+      
+      </script>
+</head>
+
+<body>
+
+   <form action='' method="get"> 
+      <label>Soma de dois números:</label>
+      <br/>
+      <input type="text" id="a"/>
+      <br/>
+      <input type="text" id="b"/>
+      <br/>
+      <input type="text" id="operacao" placeholder="Digite a Operação"/>
+      <br/>
+      <input type="submit" onclick="soma()" value='calcular' />
+      <br/>
+      <label>Resultado: </label>
+      <label id="resultado"></label>
+  </form>
+
+
+</body>
+
+</html>

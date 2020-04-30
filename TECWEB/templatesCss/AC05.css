@@ -1,0 +1,66 @@
+*{
+    border: 1px solid black;
+}
+.grid_container{
+    display:grid;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'coluna1 auto'
+        'rodape rodape';
+    margin:0px;
+}
+.cabecalho{
+    grid-area: cabecalho;
+    text-align:center;
+}
+.rodape{
+    grid-area: rodape;
+    text-align:center;
+}
+.grid_item2{
+    grid-area: coluna2;
+    text-align:center;
+    background-color:lightgray;
+    height:600px;
+}
+
+.grid_item1{
+    grid-area: coluna1;
+    flex-direction:column;
+    text-align:center;
+    background-color:lightgray;
+    height:600px;
+}
+.menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+}
+.menu div{
+    width: 34%;
+}
+.menu div:hover{
+    background-color:lightblue;
+}
+
+.menu_lateral{
+    display:inline-block;
+    flex-direction:column;
+    height: 100%;
+    width: 300px;
+    align-content: center;
+}
+
+.menu_lateral div:hover{
+    background-color:lightblue;
+}
+
+  .conteiner2 {
+    grid-area: auto;
+    width: 1200px;
+    height: 500px;
+    box-align: left;
+    background: #0daedf;
+    float: left;
+}

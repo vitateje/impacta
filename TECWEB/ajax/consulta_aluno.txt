@@ -1,0 +1,59 @@
+function consultaAluno(){
+    this.location.pathname= "aluno/"+document.forms["form_consulta"]["nome_aluno"].value;
+}
+function consultaAlunoAjax(){
+    var url = '/aluno_ajax/'
+    var assincrono = true;
+    var metodo = 'POST'
+    var nome_aluno = document.forms["form_consulta"]["nome_aluno"].value;
+    var dados = {
+        "nome" : nome_aluno
+    };
+    var request = new XMLHttpRequest();
+    request.open(metodo,url,assincrono);
+    request.setRequestHeader("Content-Type","application/json;charset=UTF-8");
+    request.setRequestHeader("X-CSRFToken",getCookie('csrftoken'));
+    request.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            atualizaPagina(this);
+        }
+    };
+    request.send(JSON.stringify(dados));
+}
+function atualizaPagina(request){
+    var dados = JSON.parse(request.responseText);
+
+    aluno_nome = document.createElement("td");
+    aluno_nome.innerHTML = dados.nome;
+    aluno_nota = document.createElement("td");
+    aluno_nota.innerHTML =  dados.nota;
+    aluno_matricula = document.createElement("td");
+    aluno_matricula.innerHTML = dados.matricula;
+    aluno = document.createElement("tr");
+    aluno.appendChild(aluno_matricula);
+    aluno.appendChild(aluno_nome);
+    aluno.appendChild(aluno_nota);
+    
+    tabelas = document.getElementsByClassName("tabela_consulta");
+    tabela = tabelas[0];  
+    tamanho = tabela.childNodes[1].rows.length;
+    for( i = 1; i < tamanho; i++){
+        tabela.childNodes[1].deleteRow(1);
+    }
+    tabela.childNodes[1].appendChild(aluno);
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }

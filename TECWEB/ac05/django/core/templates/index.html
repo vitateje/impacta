@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AC_05_TECWEB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <nav style="text-align: center;">
+        <button id="menu_1" class="botao_1">Inicio</button>
+        <button id="menu_2" class="botao_2">Projeto</button>
+        <button id="menu_3" class="botao_3">Curriculo</button>
+    </nav>
+    <ul class="nav nav-list">
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-cogs"></i>
+                <span class="menu-text menu-lateral01">
+                    Historia
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-user-circle-o"></i>
+                <span class="menu-text menu-lateral02">
+                    Projetos
+                </span>
+            </a>
+        </li>
+    </ul>
+
+    <div class='corpo'></div>
+
+    <footer style="text-align: center; padding: 450px;">
+        <p>Ac 05</p>
+        <p>            &copy; 2019 - by Vitor Jesus
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+<script>
+    $("#menu_1").click(function () {
+        $(".menu-lateral01").text("Historia");
+        $(".menu-lateral02").text("Sobre Vitor");
+    });
+    $("#menu_2").click(function () {
+        $(".menu-lateral01").text("Impacta");
+        $(".menu-lateral02").text("LMS");
+    });
+    $("#menu_3").click(function () {
+        $(".menu-lateral01").text("Comex");
+        $(".menu-lateral02").text("Product Owner");
+    });
+</script>
+
+<style>
+    .botao_1 {
+        color: rgb(7, 28, 48);
+        padding: 0px 65px;
+        background-color: rgb(216, 215, 223);
+        width: 300px;
+        height: 25px;
+    }
+
+    .botao_2 {
+        color: rgb(7, 28, 48);
+        padding: 0px 65px;
+        background-color: rgb(216, 215, 223);
+        width: 300px;
+        height: 25px;
+    }
+
+    .botao_3 {
+        color: rgb(7, 28, 48);
+        padding: 0px 65px;
+        background-color: rgb(216, 215, 223);
+        width: 300px;
+        height: 25px;
+    }
+
+    .corpo {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    padding-right: 10px;
+    box-align: right;
+    background: #0daedf;
+    margin left: 100px;
+    float: left;
+    
+
+
+    }
+</style>
