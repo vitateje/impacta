@@ -1,0 +1,36 @@
+*{
+    border: 1px solid black;
+}
+.grid_container{
+    display:grid;
+    grid-template-areas: 
+        'cabecalho'
+        'coluna1'
+        'rodape';
+}
+.cabecalho{
+    grid-area: cabecalho;
+    text-align:center;
+}
+.rodape{
+    grid-area: rodape;
+    text-align:center;
+}
+.grid_item1{
+    grid-area: coluna1;
+    text-align:center;
+    background-color:lightgray;
+    height:400px;
+}
+.menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+}
+.menu div{
+    width: 34%;
+}
+.menu div:hover{
+    background-color:lightblue;
+}

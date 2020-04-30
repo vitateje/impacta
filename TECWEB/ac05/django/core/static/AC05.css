@@ -1,0 +1,79 @@
+*{
+    border: 1px solid black;
+}
+.grid_container{
+    display:grid;
+    grid-template-areas: 
+        'cabecalho'
+        'coluna1'
+        'rodape';
+    margin:0px;
+}
+.cabecalho{
+    grid-area: cabecalho;
+    text-align:center;
+}
+.rodape{
+    grid-area: rodape;
+    text-align:center;
+}
+.grid_item2{
+    grid-area: coluna2;
+    text-align:center;
+    background-color:lightgray;
+    height:600px;
+}
+
+.grid_item1{
+    grid-area: coluna1;
+    flex-direction:column;
+    text-align:center;
+    background-color:lightgray;
+    height:600px;
+}
+.menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+}
+.menu div{
+    width: 34%;
+}
+.menu div:hover{
+    background-color:lightblue;
+}
+
+.menu_lateral{
+    display:inline-block;
+    flex-direction:column;
+    height: 100%;
+    width: 300px;
+    align-content: center;
+}
+
+.menu_lateral div:hover{
+    background-color:lightblue;
+}
+
+article {
+    display: inline-block;
+    float: left;
+    margin-left: 0%;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  } 
+
+  .conteiner2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    padding-right: 10px;
+    box-align: center;
+    background: #0daedf;
+    margin left: 5%;
+    float: left;
+}

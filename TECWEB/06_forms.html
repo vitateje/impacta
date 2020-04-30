@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+	    <meta charset="	UTF-8"/>
+	    <title> Home </title>
+	    <link rel="stylesheet" href="forms.css"> <!--link de integração com CSS3 -->
+        <link rel="shortcut icon" href="https://vitateje.github.io/devops/favicon.ico" >
+        <meta name="description"
+            content="About Vitor and HTML stuffs"/>
+            <meta name="keywords"
+            content="vitor,arte,bibliografia"/>
+    </head>
+
+
+    <body>
+        <p id="especiais"> 
+            &lt; &gt; &amp; &quot; &euro; &cent; &pound; &yen; &copy; &reg; &trade; &lsquo; &rsquo; &ldquo; &rdquo; &times; &divide; 
+        </p>
+
+
+        <div id='header'>
+            <img src="mao.png" alt="Anish Kapoor" />
+            <ul>
+                <li><a href="03_Curriculo_Vitor_Jesus_tec_web.html"> Curriculo </a></li>
+                <li><a href="05_AC_02.htm"> AC02 </a></li>
+            </ul>
+        </div>
+
+        <p> Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="gallery"> Tate Modern</span> gallery in London in 2003.</p>
+
+        <iframe
+        float="center"
+        width="450"
+        height="350"
+        src="tabela_devops.html">
+        </iframe>
+
+
+
+        <fieldset class="conteiner">
+            <legend>Login</legend>
+
+                <form action="05_AC_02.htm" method="POST">
+
+                <label for="username"> Digite seu usuario: </label><br><!--Utilizando Label - utilizar para leitores de tela -->
+                <input type="text" name="usuario" size="20" maxlength="30" placeholder="type your username" id="username" required/><br>
+
+                <p> Senha: <br> <input type="password" name="senha:" size="20" maxlength="30" placeholder="type your password" id="password" required> </p><!-- Sem Label e Utilizando p -->
+        
+                <textarea name="comentarios" cols="15" rows="4" placeholder="type your comments"></textarea><br>
+
+                <input type="image" src="botao-enviar.png"><br><br>
+
+        </fieldset>
+<br>
+        <fieldset>
+                <legend>Site e Email</legend>
+            <form action="www.google.com.br" method="POST>"
+
+            <label for='email'> Digite seu email: </label><br>
+            <input type="email" name='email' placeholder="type your email" id='email' required><br><br>
+
+            <label for='site'>Digite seu site:</label><br>
+            <input type="url" name='site' placeholder="type your website" required><br><br>
+
+            <input type="submit" value="submit">
+            </form>
+        </fieldset>
+
+    </fieldset>
+    <br>
+            <fieldset>
+                    <legend>Busca</legend>
+                <form action="https://www.google.com" method="GET"
+    
+                <label for='Busca'>Busca</label><br>
+                <input type="search" name='search' placeholder="What are you looking for" id='busca' ><br><br>
+                      
+                <input type="submit" value="search">
+                </form>
+            </fieldset>
+
+
+        <p>Qual seu time de futebol ?</p>
+        <input type="radio" name="time" value="1"> Santos<br>
+        <input type="radio" name="time" value="2"> Corinthians<br>
+        <input type="radio" name="time" value="2"> Palmeira<br>
+        <input type="radio" name="time" value="3"> São Paulo<br><br>
+
+        <input type="image" src="botao-enviar.png"><br><br>
+
+    </form>
+
+<form action="05_AC_02.htm" method="POST">
+    <input type="file" name="user-song" ><br>
+    <input type="submit" value="upload"><br>
+</form>
+
+<form action="05_AC_02.htm">
+    <button>
+        <img src="mao.png" alt="add" width="20" height="20"/> Add
+     </button>
+     <input type="hidden" name="bookmark" value="lyrics" />
+</form>
+
+</nav>
+
+<aside>
+
+    <form action="05_AC_02.htm" method="GET" target="_blank">
+            <select class="fast_food" name="food_place">
+                    <option value="135">MC Donalds</option>
+                    <option value="134">Buger King</option>
+                    <option value="136">Ogros Veganos</option>
+                  </select>
+           <br>
+                  <input type="checkbox" name="player" value="1"> Messy
+                  <input type="checkbox" name="player" value="2"> Neymar
+                  <input type="checkbox" name="player" value="3"> Cr7
+           
+                  <input type="submit" name="ENVIAR" value="ENVIAR"  >
+
+    </form>
+
+<p> escolha a marca do carro </p>
+  <select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select> 
+
+  <select name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select> 
+
+</aside>
+
+<ul>
+
+<li> Life </li>
+<li> Jobs </li>
+<li> Hobbies </li>
+
+</ul>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the sr(source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<h5>Menu Principal
+- Home
+- Especificações
+- Fotos
+- Multimídia
+- Fale conosco</h5>
+
+	</header>
+
+<h5>&copy; 2018 - by Vitor Jesus</h5>
+<h6>Instagram | Linkedin | Home</h6>
+
+</div id>
+</body>
+</html>

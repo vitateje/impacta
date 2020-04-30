@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+
+    <h3> Consulta de Alunos </h3>
+
+
+{% for aluno in aluno %}
+    <ul>
+        <li> {{ aluno.nome }} </li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,13 @@
+Para essa tarefa vocês deverão programar uma função que devolve um dicionário que tem como chave o número de um livro da Bíblia em Inglês e como valor uma lista que consiste na palavra mais frequente naquele livro e no número de ocorrências desta palavra.
+
+Nota: Considerem como palavra qualquer sequencia de caracteres que não são um espaço.
+
+A AC deverá ser realizada em duplas (somente um integrante da dupla deverá submeter a AC) e entregue até as 22h30 de hoje. Somente serão aceitos trabalhos dos alunos que estiverem presentes em sala.
+
+Na descrição da AC estão os arquivos que vocês necessitarão para realizar o trabalho:
+
+- HolyBible.txt = arquivo de texto com a bíblia dentro (não será necessário editar ou reenviar este arquivo)
+- ArquivoTeste.txt = arquivo de texto para teste (Não será necessário editar ou reenviar este arquivo)
+- auxiliar.py = arquivo com funções auxiliares para o desenvolvimento do trabalho (Não será necessário editar este arquivo)
+- saida.txt = um exemplo de como deve ser a saída da função par ao arquivo de teste
+- conta_palavras_livro.py = arquivo que deverá ser modificado e entregue para avaliação. O nome da função principal não deverá ser alterado. Caso seja entregue algum código além da definição de funções, se certificar que este código não será executado quando o módulo for importado.

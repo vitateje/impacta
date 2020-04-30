@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   
+<head>
+   <title>Calculadora</title>
+
+<style type="text/css">
+form fieldset {
+   margin: 15px auto 10px auto;
+   width: 40%;
+   border: solid rgb(228, 13, 13) 1px;
+   padding: 3%;
+}
+#oper {
+   background-color: aquamarine;
+}
+form legend {
+   padding: 10px;
+   margin: 15px;
+   border: solid black 2px;
+   font-size: 90%;
+   font-weight: bold;
+   background-color: #e8e8e8;
+}
+form label {
+   display: block;
+   font-size: 15px;
+}
+form input {
+   width: 100%;
+   border: solid #ccc 1px;
+   font-size: 13px;
+   margin-bottom: 10px;
+}
+form input.botao {
+   display: block;
+   width: auto;
+   float: right;
+}
+body {background-color: rgb(100, 96, 96);
+}
+</style>
+
+<script type="text/javascript">
+function calcular(oper) {
+   var valor1 = document.calcform.valor1.value;
+   var valor2 = document.calcform.valor2.value;
+   if (oper == "somar") {
+      var res = parseInt(valor1) + parseInt(valor2);
+   } else {
+      if (oper == "subtrair") {
+         var res = valor1-valor2;
+      } else {
+         if (oper == "multiplicar") {
+            var res = valor1*valor2;
+         } else {
+            var res = valor1/valor2;
+         }
+      }
+   }
+   document.calcform.res.value = res;
+}
+</script>
+
+</head>
+<body>
+
+      <form name="calcform" method="post" action="">
+            <fieldset>
+               <legend>CALCULADORA</legend>
+         
+               <label for="valor1">Digite um valor </label>
+               <input type="text" name="valor1" id="valor1" placeholder="Digite um Valor" />
+         
+               <label for="valor2">Digite um valor </label>
+               <input type="text" name="valor2" id="valor2" placeholder="Digite um Valor" />
+         
+               <label for="oper">Selecione a operação:</label>
+               <select name="oper" id="oper" placeholder="Selecione a Operação">
+                  <option value="somar">Somar</option>
+                  <option value="subtrair">Subtrair</option>
+                  <option value="multiplicar">Multiplifcar</option>
+                  <option value="dividir">Dividir</option>
+               </select>
+         
+               <label for="res">Resultado:</label>
+               <input type="text" name="res" id="res"/>
+         
+               <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+            </fieldset>
+         </form>
+
+</body>
+</html>

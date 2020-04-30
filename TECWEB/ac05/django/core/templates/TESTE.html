@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="AC05.css"/>
+<title>AC05</title>
+
+<style>
+
+*{
+    background-color: coral;
+    border: 1px solid black;
+}
+.grid_container{
+    display:grid;
+    grid-template-areas: 
+        'cabecalho'
+        'coluna1'
+        'rodape';
+    margin:0px;
+}
+.cabecalho{
+    grid-area: cabecalho;
+    text-align:center;
+}
+.rodape{
+    grid-area: rodape;
+    text-align:center;
+}
+.grid_item2{
+    grid-area: coluna2;
+    text-align:center;
+    background-color:lightgray;
+    height:600px;
+}
+
+.grid_item1{
+    grid-area: coluna1;
+    flex-direction:column;
+    text-align:center;
+    background-color:lightgray;
+    height:600px;
+}
+#menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+}
+#menu div{
+    width: 34%;
+}
+#menu div:hover{
+    background-color:lightblue;
+}
+
+.menu_lateral{
+    display:inline;
+    flex-direction:column;
+    height: 500px;
+    width: 300px;
+    align-content: center;
+}
+
+.menu_lateral div:hover{
+    background-color:lightblue;
+}
+
+article {
+    display: inline-block;
+    float: left;
+    margin-left: 0%;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  } 
+
+  .conteiner2 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 300px;
+    padding-right: 10px;
+    box-align: center;
+    background: #0daedf;
+    margin left: 5%;
+    float: left;
+}
+
+  .conteudo {
+    display: inline-block;
+    margin-left: 50px; 
+    width: 50%;
+    height: 400px;
+    top: 0px;
+    left: 350px;
+}
+</style>
+
+<script>
+
+function mostrarAtivo(tag){
+  var tag_li = document.getElementById('lista_menu');
+  var tag_a = tag_li.getElementsByTagName('a');
+  for (i=0; i<tag_a.length; i++ ){
+    tag_a[i].style.backgroundColor = "";
+    tag_a[i].style.color = "";
+  }
+  tag.style.backgroundColor = "#ff0000"; // altera o fundo
+  tag.style.color = "#ffffff"; // altera a cor
+}
+
+function mostrarAtivo2(tag){
+  var tag_li = document.getElementsById('menu');
+  var tag_a = tag_li.getElementsByTagName('a');
+  for (i=0; i<tag_a.length; i++ ){
+    tag_a[i].style.backgroundColor = "";
+    tag_a[i].style.color = "";
+  }
+  tag.style.backgroundColor = "#ff0000"; // altera o fundo
+  tag.style.color = "#ffffff"; // altera a cor
+}
+
+</script>
+
+</head>
+<body>
+<div class="grid_container">
+    <div class="cabecalho">
+        <div id="menu">
+            <div><a href="#" onclick="mostrarAtivo2(this);"'>Sobre Vitor</a></div>
+            <div><a href="#" onclick="mostrarAtivo2(this);"'>Currículo</a></div>
+            <div><a href="#" onclick="mostrarAtivo2(this);"'>Projetos</a></div>             
+        </div>
+        
+    </div>
+
+    <div class="menu_lateral">
+        <ul id="lista_menu">
+            <li><a href="#" onclick="mostrarAtivo(this);">Home</a></li>
+            <li><a href="#" onclick="mostrarAtivo(this);">Fotos</a></li>
+            <li><a href="#" onclick="mostrarAtivo(this);">Currículo</a></li>
+            <li><a href="#" onclick="mostrarAtivo(this);">Contato</a></li>
+         </ul>
+         <div class="conteudo"> Sobre Vitor Apinéia </div>
+         <br>
+         <fieldset>
+            <legend>CPF e Email</legend>
+        <form action="www.google.com.br" method="POST>">
+
+        <label for='email'> Digite seu email: </label><br>
+        <input type="email" name='email' placeholder="type your email" id='email' required><br><br>
+
+        <label for='site'>Digite seu CPF:</label><br>
+        <input type="url" name='site' placeholder="type your website" required><br><br>
+
+        <input type="submit" value="submit">
+        </form>
+    </fieldset>
+    </div>
+
+    <div class="rodape">&copy; 2019 - by Vitor Jesus</div>
+</div>
+</body>
+</html>

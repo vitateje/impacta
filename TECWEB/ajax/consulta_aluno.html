@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block scripts %}
+<script src="{% static 'js/consulta_aluno.js' %}"> </script>
+{% endblock %}
+{% block corpo %}
+<div>
+<form name="form_consulta">
+{% csrf_token %}
+Nome do aluno: 
+<input name="nome_aluno" type="text" max_length=50/>
+<input type="button" onclick="consultaAluno();" value="Consultar"/>
+</form>
+</div>
+<br/>
+<table class="tabela_consulta">
+<tr><th>Matricula</th><th>Nome</th><th>Nota</th></tr>
+<tr>
+<td>{{ aluno.matricula }} </td>
+<td>{{ aluno.nome }} </td>
+<td>{{ aluno.nota }} </td>
+</tr>
+</table>
+{% endblock %}

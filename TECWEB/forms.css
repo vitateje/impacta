@@ -1,0 +1,49 @@
+.nome {
+    width: 100%;
+    height: 0px;
+    background-color: #000000;
+}
+
+p {
+    background: #CCCCCC;
+}
+
+form {
+    background: #CCCCCC;
+    color: #000000;
+    text-align: center
+}
+
+body {
+    background-color: #CC9900;
+}
+
+fieldset {
+border-color: #0e9af7
+}
+
+.conteiner {
+    width: 20%;
+    height: 300px;
+    padding-left: 10px;
+    box-align: center;
+    background: #0daedf;
+    margin left: 65%;
+    float: right;
+}
+
+#header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13pt;  
+    color: #0daedf;
+}
+
+.gallery {
+    background-color: aquamarine;
+    font-family: monospace;
+}
+
+#especiais {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}

@@ -1,0 +1,15 @@
+{% extends 'consulta_disciplina.html' %}
+
+{% block corpo %}
+
+    <h3> Consulta de Alunos </h3>
+
+
+{% for nome in nome %}
+    <ul>
+        <li> {{ nome.nome }} </li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}

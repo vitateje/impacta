@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+	    <meta charset="	UTF-8"/>
+	    <title> Home - vitateje </title>
+	    <link rel="stylesheet" href="estilo.css"> <!--link de integração com CSS3 -->
+        <script src="interacao.js"></script>
+        <link rel="shortcut icon" href="https://vitateje.github.io/devops/favicon.ico" >
+        <meta name="description" content="About Vitor and HTML stuffs"/>
+        <meta name="keywords" content="vitor,arte,bibliografia"/>
+
+    </head>
+
+    <body>
+<div class="header">
+<!-- <button onclick="Alert ('Olá')"> Clique em Miim </button> -->
+<div id='ts1'> <a target='i2' href='index.html'> HOME </a></div>
+<div id='ts2'> <a target='i2' href='index2.html'> PORTFOLIO </a> </div>
+<div id='ts3'> <a target='i2' href='curiosidades.html'> CURIOSIDADES </a> </div>
+<div id='ts4'> <a target='i2' href='conteudo.html'> CONTATO </a> </div>
+</div>
+
+        <div class="container">
+            <div class="topo box">
+
+                <span id='menu'> MENU <br>
+                    
+                    <div class='menu_l'> EXPERIENCIAS </div>
+                    <div class='menu_l'> CURSOS </div>
+                    <div class='menu_l'> PORTFOLIO </div>
+
+                </span>
+
+                <span id='menu2'> CONTEUDO <br>
+                <p id='titulo' > Sobre todos os individuos </p><iframe 
+        name='i2'
+        float="left"
+        width="100%%"
+        height="100%%"
+        src="conteudo.html">
+        </iframe>                
+                </span>
+                <div id='menu1'>
+                <fieldset class="contform">
+                <legend>CADASTRO:</legend><br><br>
+
+                <form action="index.html" method="GET">
+                {% csrf_token %}
+                <label for="username"> Digite seu Usuario: </label><br><!--Utilizando Label - utilizar para leitores de tela -->
+                <input type="text" name="usuario" size="20" maxlength="30" placeholder="" id="username"  value="username" required/><br>
+
+               <label for="password"> Digite sua Senha: </label><br>
+               <input type="password" name="senha:" size="20" maxlength="30" placeholder="" id="password" value="password" required> </p><!-- Sem Label e Utilizando p --><br>
+        
+                <textarea name="comentarios" cols="15" rows="4" placeholder="type your comments"></textarea><br>
+
+                <input type="image" src="botao-enviar.png" onclick="link()"><br><br>
+
+                </form>
+</fieldset>
+                </div>
+ 
+            
+            </div>
+            <div class="rodape box">&copy; 2019 - Designed by Arquinotec</div>
+        <div>       
+    </body>
+</html>

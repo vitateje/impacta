@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block scripts %}
+<script src="{% static 'js/validaform.js' %}"> </script>
+{% endblock %}
+{% block corpo %}
+<form name ="cadastroDisciplina" action="/nova_disciplina" method="POST" onsubmit="return validaCadastroAluno();">
+{% csrf_token %}
+Cadastro de Disciplina:<br/>
+<label for="nome">Disciplina:</label>
+<input name="nome" id="nome" value='nome_disciplina' type="text"/><br/>
+<label for="nota">Nota:</label>
+<input name="nota" id="nota" type="number"/><br/>
+<input type="submit"/>
+</form>
+{% endblock %}

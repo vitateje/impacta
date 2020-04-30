@@ -1,0 +1,63 @@
+{ 
+    border: dotted chartreuse;
+    fint
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.footer {
+    margin-bottom:0px;
+    width: 98%;
+    height: 15px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+.menu {
+    width: 230px;
+    border: 1px solid black;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+
+.header {
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.conteiner1 :hover{
+    background-color: aqua;
+}
+
+.conteiner1 {
+        height: 400px;
+        width: 49%;
+        border: 1px solid black;
+        float: left;
+}
+
+.conteiner5 {
+    height: 400px;
+    width: 49%;
+    border: 1px solid black;
+    float: right;
+}
+
+.conteiner2 {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 48%;
+    border: 1px solid black;
+    float: right;
+}

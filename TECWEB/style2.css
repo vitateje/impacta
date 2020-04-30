@@ -1,0 +1,33 @@
+}
+
+.conteiner{
+width: 1100px;
+height: 800px;
+background: #dd10b1;
+margin: 5px auto;
+text-align: center;
+}
+
+.menu{
+width: 100%;
+height: 30px;
+background-color: #000000;
+}
+
+.item_menu{
+height: 30px;
+width: 33%;
+background-color: #ffffff;
+color: #000000;
+float: left;
+}
+
+.item_menu:hover{
+background: #CCCCCC;
+color: #21da74;
+}
+
+.texto{
+color: #b62c2c;
+text-align: center;
+}

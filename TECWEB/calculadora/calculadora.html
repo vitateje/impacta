@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="calculadora.css"/>
+<title>Calculadora</title>
+<script>
+    function soma(){
+        var x = document.getElementById("a").value;
+        var y = document.getElementById("b").value;
+        var resultadoSoma = Number(x) + Number(y);
+        document.getElementById("resultado").innerText=resultadoSoma;
+    }
+</script>
+</head>
+<body>
+<form>
+    <label>Soma de dois números:</label>
+    <br/>
+    <input type="text" id="a"/>
+    <br/>
+    <input type="text" id="b"/>
+    <br/>
+    <button type="button" onclick="soma()">+</button>
+    <br/>
+    <label>Resultado: </label>
+    <label id="resultado"></label>
+</form>
+</body>
+</html>

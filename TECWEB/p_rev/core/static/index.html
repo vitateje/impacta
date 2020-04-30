@@ -1,0 +1,38 @@
+{% load static %}
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="{% static 'AC05.css' %}"/>
+<script src="{% static 'project.js'%}"></script>
+
+<title>AC05</title>
+</head>
+
+<body>
+<h1>Bem Vindo {{nome}}</h1>
+<div class="grid_container">
+    <div class="cabecalho">
+        <div id="menu">
+            <div><a href="#" onclick="mostrarAtivo2(this);"'>Sobre Vitor</a></div>
+            <div><a href="#" onclick="mostrarAtivo2(this);"'>Currículo</a></div>
+            <div><a href="#" onclick="mostrarAtivo2(this);"'>Projetos</a></div>             
+        </div>
+        
+    </div>
+
+    <div class="menu_lateral">
+        <ul id="lista_menu">
+            <li><a href="#" onclick="mostrarAtivo(this);">Home</a></li>
+            <li><a href="#" onclick="mostrarAtivo(this);">Fotos</a></li>
+            <li><a href="#" onclick="mostrarAtivo(this);">Currículo</a></li>
+            <li><a href="#" onclick="mostrarAtivo(this);">Contato</a></li>
+         </ul>
+         <div class="conteudo"> Sobre Vitor Apinéia </div>
+    </div>
+
+    <div class="rodape">&copy; 2019 - by Vitor Jesus</div>
+</div>
+</body>
+</html>
