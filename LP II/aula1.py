@@ -1,4 +1,4 @@
-
+     
 '''Exercício: escreva uma função que recebe um número natural e devolve a 
 decomposição em números primos para este número'''
 
